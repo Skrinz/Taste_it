@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f6eee3 !important;
+  }
+.container_mainscreen{
+    position: absolute;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.container_larger_half{
+    position: absolute;
+    width: 1217px;
+    min-height: 100vh;
+}
+.button_container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.button_menu_design {
+    background-color: #d17fb2;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+}
+
+.searchInputContainer{
+    margin-top: 20px;
+}
+
+.searchInputContainer input{
+    margin-top: 10px;
+    width: 100%;
+    height: 54px;
+    font-size: 19px;
+    padding-left: 26px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.searchResultContainer{
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.productResultContainer{
+    position: relative;
+    overflow: hidden;
+    height: 70px;
+    margin-top: 40px;
+}
+
+
+.productInfoContainer{
+    position: absolute ;
+    width: 100%;
+    bottom: 0;
+    color: #fff;
+    font-size: 18px;
+    left: 0;
+    background: #d17fb2;
+    height: 70px;
+    padding: 12px;
+}
+
+
+.productResultContainer .col-4{
+    padding: 0px !important;
+}
+
+.productResultContainer:hover{
+    cursor: pointer;
+}
+
+.posOrderContainer{
+    padding: 0px !important;
+    border-left: 3px solid black
+}
+
+.pos_header{
+    background: #d17fb2;
+    margin: 0 auto;
+}
+
+.pos-header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.Cashier_logo{
+    font-size: 57px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0px !important;
+}
+
+#pos_items_tbl th{
+    color:#d17fb2;
+    font-size: 16px;
+}
+
+#pos_items_tbl td{
+    font-size: 20px;
+    color: black;
+}
+
+#pos_items_tbl tbody tr:nth-child(odd){
+    background: #b498a9;
+}
+
+.pos_item_btn{
+    background-color: #ff5757;
+    padding: 10px;
+    font-size: 16px;
+    border: round;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+.pos_item_btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.pos_item_btn:hover{
+    opacity: 0.7;
+}
+
+
+.pos_item-edit-btn{
+    background: none;
+}
+
+.pos_item-delete-btn{
+    background: none;
+}
+
+p.item_total{
+    font-size: 28px;
+    padding-left: 10px;
+    padding-right: 14px;
+}
+
+span.item_total--value{
+    float: right;
+    font-weight: bold;
+    color: #31272d;
+    font-size: 34px;
+}
+
+span.item_total--label{
+    font-size: 22px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.checkoutBtnContainer{
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.checkoutBtn{
+    font-size: 45px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    border: 2px solid #9fcbce;
+    border-radius: 5px;
+    font-weight: 800;
+    color: #9fcbce;
+}
+
+.checkoutBtn:hover{
+    background: #9fcbce;
+    color: white;
+    transition: 0.3s;
+}
+
+.item_total_container{
+    margin-top: 100px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    color: black;
+    background-color: #d17fb2 ; /* Adjust based on your theme */
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    /* Additional styling to match your theme */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #d17fb2; /* Adjust based on your theme */
+    min-width: 120px;
+    z-index: 1;
+}
+
+.dropdown-item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown menu on click/hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
