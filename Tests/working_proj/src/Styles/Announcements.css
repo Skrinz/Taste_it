@@ -1,0 +1,23 @@
+.AnnouncementList{
+    color: #333333;
+    background: #FFFFFF;
+    padding: 0 20px 15px;
+    border-radius: 5px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size:  13px;
+    font-family: sans-serif;
+    color: #134D0f;
+    gap: 5px;
+
+}
+
+.title h2{
+    margin-top: 16px;
+    font-size:  18px;
+}
+
